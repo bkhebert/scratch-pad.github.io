@@ -40,7 +40,9 @@ function toLowerCase(string) {
    C:
    E:
 */
-//
+// converted the parameter string to lowercase using the toLowerCase method
+return string.toLowerCase();
+
     // YOUR CODE ABOVE HERE //
 }
 
