@@ -17,8 +17,14 @@
 
 function length(string) {
     // YOUR CODE BELOW HERE //
-
-    
+/*
+I: Function takes in a string
+O: Function returns the length of the input string
+C:
+E:
+*/
+// return the length property of the input string
+    return string.length;
 
     // YOUR CODE ABOVE HERE //
 }
@@ -28,8 +34,13 @@ function length(string) {
  */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-   
-
+   /*
+   I: Function takes in a string
+   O: Function returns the string in lowercase
+   C:
+   E:
+*/
+//
     // YOUR CODE ABOVE HERE //
 }
 
