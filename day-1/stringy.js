@@ -78,11 +78,22 @@ return string.toUpperCase();
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
 
-
-
-    // YOUR CODE ABOVE HERE //
+/*
+   I: Function takes in a string
+   O: Function returns the string in lowercase and with dashes  in place of the spaces
+   C: 
+   E:
+*/
+  //create a new string that is equal to the string parameter in lowercase
+  var lowerCaseString = string.toLowerCase();
+  
+  //split up the lowercasedstring into an array using split. Each space creates a new index
+  var splitString = lowerCaseString.split(" ");
+  //join the array into a single string, using dashes to join each index 
+  var dashedString = splitString.join("-");
+  // return the dashed String
+  return dashedString
 }
-
 /**
  * Given an input String and a single character, return true if the String
  * begins with the character, false otherwise. The Function is case insensitive.
@@ -97,8 +108,25 @@ function toDashCase(string) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-    
+/*
+I: A string and a character
+O: A true or false valure
+C:
+E: Case insensitive
+*/
+//check to see if the first index of the string is equal to the character input in Uppercase
+if (string[0] === char.toUpperCase()){
+    //if the uppercase char matches, return true
+    return true
+    //check to see if the first index of the string is equal to the character input in Lowercase
+} else if (string[0] === char.toLowerCase()) {
+    //if the lowercase char matches, return true
+    return true 
+    //if the previous conditions are not true
+} else {
+    //return false
+    return false
+}
 
     // YOUR CODE ABOVE HERE //
 }
@@ -117,7 +145,25 @@ function beginsWith(string, char) {
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
+/*
+I: Inputs a string and a single character
+O: Outputs a true or false value
+C: 
+E: Check to see if the final character matches, case insensitive
+*/
+//Using an if statement to see if the last index of the string is equal to the character input in uppercase
+if (string[string.length - 1] === char.toUpperCase()){
+    // if the condition is true, return true
+    return true
+    //Check if lowercased character matches the final character in the string
+} else if (string[string.length -1] === char.toLowerCase()){
+    // if the character matches then return true
+    return true
+    //if none of the conditions are true
+} else {
+    //return false
+    return false
+}
 
 
     // YOUR CODE ABOVE HERE //
