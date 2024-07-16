@@ -40,7 +40,7 @@ function toLowerCase(string) {
    C:
    E:
 */
-// converted the parameter string to lowercase using the toLowerCase method
+// convert parameter string to lowercase using toLowerCase method
 return string.toLowerCase();
 
     // YOUR CODE ABOVE HERE //
@@ -51,9 +51,14 @@ return string.toLowerCase();
  */
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+/*
+   I: Function takes in a string
+   O: Function returns the string in uppercase
+   C: n/a
+   E: n/a
+*/
+//returns parameter string in lowercase with toUpperCase method
+return string.toUpperCase();
     // YOUR CODE ABOVE HERE //
 }
 
