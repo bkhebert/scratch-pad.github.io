@@ -142,8 +142,22 @@ E:
  */
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-  
-  
+  /*
+I: object
+O: a number equal to the quantity of key/value pairs stored within that object
+C: must use return
+E:
+*/
+//initialize a variable to zero
+var numberOfKeys = 0;
+
+//use a for in loop that will loop through each key value of the object
+  for (var key in object){
+//increment the numberOfKeys variable by 1 for each loop
+ numberOfKeys += 1;
+  }
+  //return the numberOfKeys variable
+  return numberOfKeys;
   
   
   // YOUR CODE ABOVE HERE //
@@ -155,8 +169,25 @@ function getObjectLength(object) {
  */
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
+  /*
+I: Object
+O: the values of the object
+C: must be in reverse, must use console.log()
+E:
+*/
   
-  
+//initialize an empty array
+var arrayOfKeys2 = [];
+//use a for loop to iterate through each key in the object
+for (var key in object){
+//push each key value into an array
+arrayOfKeys2.push(object[key]); 
+}
+//use a for loop to iterate through each index of the array in reverse
+for (var i = arrayOfKeys2.length - 1; i >= 0; i--){
+  //use console.log() to print each index of the array
+  console.log(arrayOfKeys2[i]);
+} //i cannot believe this worked lol man, i really hope this is was the easiest way to code this
   
   
   // YOUR CODE ABOVE HERE //
