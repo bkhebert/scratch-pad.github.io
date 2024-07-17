@@ -56,7 +56,7 @@ function getObjectKeys(object) {
   /*
 I: an object
 O: an array, the array contains the objects keys
-C:
+C: must use return
 E:
 */
  //initialize an array
@@ -77,9 +77,17 @@ keysAsArray.push(key);
  */
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
+  /*
+I: an object
+O: printed contents of the object keys
+C: must use console.log
+E:
+*/
+  //create a for loop that will iterate through each key in the object
+for (var key in object){
+  //print each key of the object to the console
+ console.log(key); 
+}
   
   // YOUR CODE ABOVE HERE //
 }
@@ -89,10 +97,21 @@ function printObjectKeys(object) {
  */
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  /*
+I: input is an object
+O: return an array containing the objects values
+C: must use return
+E:
+*/
+//initialize an array
+var arrayOfKeys = [];
+//create a for in loop that will loop through the objects keys
+  for ( var key in object){
+//push each key value into the array
+arrayOfKeys.push(object[key]);
+  }
+  //return the array of object keys
+  return arrayOfKeys;
   // YOUR CODE ABOVE HERE //
 }
 
@@ -102,8 +121,17 @@ function getObjectValues(object) {
  */
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
-  
+  /*
+I: input is an object
+O: printed values of the object
+C: must use console.log()
+E:
+*/
+  //create a for in loop that will iterate through every key in the object
+  for( var key in object){
+    //use console.log() to print the key values of the object
+    console.log(object[key]);
+  }
   
   
   // YOUR CODE ABOVE HERE //
