@@ -21,9 +21,21 @@
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
+    /*
+I:a string
+O:the same string in reverse
+C:
+E:
+*/
+//initialize a variable to an emptystring
+var reversedString = '';
+//run a for loop that will loop through the input parameter in reverse
+for(var i = input.length - 1; i >= 0; i--){
+  //concatenate each character or value at the i index to the reversedString
+  reversedString += input[i];
+}
+//return a reversed string variable
+return reversedString
     
     // YOUR CODE GOES ABOVE HERE //
 }
