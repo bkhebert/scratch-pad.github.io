@@ -13,9 +13,25 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
-   
-    
+    /*
+I: the input is the base, which can be a string or number
+O: the output will be a function
+C:
+E: the function will test if any given value is greater than than the base
+*/
+   //return a function that takes in a given value
+   return function isItGreaterThan(givenvalue) {
+//check if the given value is greater than the base
+    if(givenvalue > base){
+    //return true if it is greater
+    return true
+//if this is not the case    
+        } else {
+//return false
+            return false
+            }
+}
+    //side note: i am sorry my code looks rageddy like this; i forgot to add a single bracket and things got out of control. will fix later
     // YOUR CODE ABOVE HERE //
 }
 
@@ -26,8 +42,18 @@ function createGreaterThanFilter(base) {
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
+    /*
+I: a string or a number
+O: a function that checks if the input is less than any given string/variable/char
+C: must return a function
+E:
+*/
+   //return a function
+   return function(givenvalue2){
+    //return a boolean of whether the given value is less than the base
+    return givenvalue2 < base;
     
-   
+   }
     
     
     // YOUR CODE ABOVE HERE //
@@ -40,8 +66,24 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
-    
+    /*
+I:a single character
+O: a function
+C:
+E: the function will test if a given string starts with the character
+*/
+    //return a function
+    return function testString(string){
+        //check if the string starts with a character, upper or lowercase
+        if( string[0] === toUpperCase(startsWith) || string[0] === toLowerCase(startsWith)){
+            //return true
+            return true
+            //if this is not the case, return false
+        } else {
+            return false
+        }
+
+    }
     
     
     // YOUR CODE ABOVE HERE //
@@ -54,7 +96,24 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
+   /*
+I:a single character
+O: a function
+C:
+E: the function will test if a given string ends with the character
+*/  
+     //return a function
+     return function testString(string){
+        //check if the string ends with a character, upper or lowercase
+        if( string[string.length - 1] === toUpperCase(endsWith) || string[string.length - 1] === toLowerCase(endsWith)){
+            //return true
+            return true
+            //if this is not the case, return false
+        } else {
+            return false
+        }
+
+    }
     
     
     
@@ -70,9 +129,21 @@ function createEndsWithFilter(endsWith) {
  */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
+      /*
+I:an array of strings and a function designed to modify a string
+O:return an array of strings
+C:
+E: the array of strings must be modified by the function 'modify' parameter
+*/ 
+//create a new array that will collect all the strings
+var modifiedStrings = [];
+    //loop that iterates through strings array parameter
+    for( var i = 0; i < strings.length; i++ ){
+        //iterate through all strings of the array and push them into a new array
+        modifiedStrings.push(modify(strings[i]));
+    }
+    //return the modified strings
+    return modifiedStrings;
     
     // YOUR CODE ABOVE HERE //
 }
@@ -90,8 +161,25 @@ function modifyStrings(strings, modify) {
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
-    
+    /*
+I: an array of strings and a function designed to test the strings
+O: a boolean
+C:
+E:
+*/
+
+//create a new array
+var doIPass = [];
+//loop that iterates through strings array parameter
+for( var i = 0; i < strings.length;  i++ ){
+    //check if any strings in the array fail the test
+    if( test(strings[i]) === true){
+        //return false if any of the strings fail
+        return true;
+    } else {
+// if none of the strings fail, return true
+    return false }
+}
     
     
     // YOUR CODE ABOVE HERE //
