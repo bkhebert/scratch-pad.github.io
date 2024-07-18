@@ -23,10 +23,35 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
+    /*
+I: two integers
+O: an array of integers
+C: array must be in ascending or descending order depending on order of the parameters
+E:
+*/
+    //initialize an empty array
+   var outputArray = [];
+   //compare the values of the parameters. if the start is less than the end
+   if(start < end){
+    //use a while loop that says while the start is less than the end
+    while(start <= end){
+        //push the value of the start parameter into the outputArray
+        outputArray.push(start);
+        //increment the start value by 1
+        start++;
+    }
+   }// if the start value is not greater than the end we will use this
+   else{
+    //while start parameter value is greater than or equal to the end
+    while(start >= end){
+        //push the value of the start into the array
+        outputArray.push(start);
+        //decrease the start param by 1
+        start--;
+    } 
+   }
+   //return the outputArray 
+    return outputArray;
     // YOUR CODE GOES ABOVE HERE //
 }
 

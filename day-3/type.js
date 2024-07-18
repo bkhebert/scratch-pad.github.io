@@ -16,8 +16,9 @@
  */
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-    
-    
+// your function needs to be able to distinguish between an object and null  
+  // how can you figure out if something is an instance of the Date Object?
+  //is the input i am dealing with an input of the Date Object? If it is, ensure it returns false  
     
     
     // YOUR CODE ABOVE HERE //
