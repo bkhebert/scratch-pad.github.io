@@ -168,18 +168,19 @@ C:
 E:
 */
 
-//create a new array
-var doIPass = [];
+//create a variable that indicates if the test is passed
+var doIPass = true;
 //loop that iterates through strings array parameter
 for( var i = 0; i < strings.length;  i++ ){
     //check if any strings in the array fail the test
-    if( test(strings[i]) === true){
-        //return false if any of the strings fail
-        return true;
-    } else {
-// if none of the strings fail, return true
-    return false }
+    if( test(strings[i]) !== true){
+        //change the variable to false
+        doIPass = false;
+    } 
 }
+// return the variable
+    return doIPass 
+
     
     
     // YOUR CODE ABOVE HERE //
