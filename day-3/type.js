@@ -19,8 +19,14 @@ function isArray(value) {
 // your function needs to be able to distinguish between an object and null  
   // how can you figure out if something is an instance of the Date Object?
   //is the input i am dealing with an input of the Date Object? If it is, ensure it returns false  
-    
-    
+    /*
+I: a value
+O: a boolean
+C: 
+E: if value is an array, return true, if not, return false
+*/
+//return the boolean result from using the built in 'isArray' method to check if the value param is an array
+   return Array.isArray(value)
     // YOUR CODE ABOVE HERE //
 }
 
